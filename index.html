@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>App Annime</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.jpg" alt="" width="30" height="24" class="d-inline-block align-top">
+            App Anime
+          </a>
+        </div>
+      </nav>
+
+    <div class="container">
+
+        <form class="row g-3" id="formulario_texto">
+            <div class="col-auto">
+              <label for="etiqueta_buscar" class="visually-hidden">Nombre del anime</label>
+              <input type="text" readonly class="form-control-plaintext" id="etiqueta_buscar" value="Nombre del anime">
+            </div>
+            <div class="col-auto">
+              <label for="campo_texto" class="visually-hidden">Nombre del anime</label>
+              <input type="text" class="form-control" id="campo_texto" placeholder="Ingrese el nombre del anime">
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary mb-3" id="btn">Búsqueda</button>
+            </div>
+          </form>
+
+          <div id="contenido">
+
+            <table class="table table-striped" id="tabla">
+              
+            </table>
+
+          </div>
+
+
+      </div>
+    
+
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Versión 0.0.1</a>
+        </div>
+      </nav>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script type="module" src="./index.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>
