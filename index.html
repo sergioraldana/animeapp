@@ -20,6 +20,12 @@
       </nav>
     <div class="container">
       <br>
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+      
+        <h4 class="alert-heading">Cómo funciona esta aplicación</h4>
+        <p>Anime app utiliza el api de https://jikan.moe la cual permite realizar consultas relacionadas con Anime, Manga y más. La consulta actual permite enviar 2 parametros hacia el servicio, el primero es el ¨type¨que puede tener varios valores y que para esta app se escogieron 3: anime, manga y character, cada type se complementa con el segundo parametro que es una cadena de texto ¨q¨sobre la cual se realiza la búsqueda. La URL para fetch acepta los 2 parametros por lo que se envian al mismo tiempo. La respuesta para cada type es diferente por lo que los resultados se manejan con funciones diferentes y la iformación se formatea para cada tipo.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
         <form class="row g-3" id="formulario_texto">
         
             <div class="col-auto">
