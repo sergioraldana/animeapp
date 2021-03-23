@@ -7,14 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
     <title>App Annime</title>
   </head>
   <body>
-
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -23,34 +18,47 @@
           </a>
         </div>
       </nav>
-
     <div class="container">
-
+      <br>
         <form class="row g-3" id="formulario_texto">
+        
             <div class="col-auto">
-              <label for="etiqueta_buscar" class="visually-hidden">Nombre del anime</label>
-              <input type="text" readonly class="form-control-plaintext" id="etiqueta_buscar" value="Nombre del anime">
+              <select class="form-select" aria-label="Tipo" id="seleccion_tipo">
+                <option selected value="anime">Anime</option>
+                <option value= "manga">Manga</option>
+                <option value="character">Personaje</option>
+              </select>
             </div>
-            <div class="col-auto">
-              <label for="campo_texto" class="visually-hidden">Nombre del anime</label>
-              <input type="text" class="form-control" id="campo_texto" placeholder="Ingrese el nombre del anime">
+            <div class="col">
+              <label for="campo_texto" class="visually-hidden">Ingrese el nombre del anime</label>
+              <input type="text" class="form-control" id="campo_texto" placeholder="Texto de búsqueda">
             </div>
             <div class="col-auto">
               <button type="button" class="btn btn-primary mb-3" id="btn">Búsqueda</button>
             </div>
           </form>
 
-          <div id="contenido">
+          <div class="container" id="contenido">
 
-            <table class="table table-striped" id="tabla">
+            <table class="table table-hover" id="table">
+              <tbody id="tabla">
+
+              </tbody>
               
             </table>
 
+
+            </div>
+
+            <div>
+
+              <div class="row row-cols-1 row-cols-md-4 g-4" id="tarjetero">
+
           </div>
 
+          </div>
 
       </div>
-    
 
       <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">

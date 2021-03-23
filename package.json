@@ -6,19 +6,11 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergioraldana/animeapp.git"
-  },
   "keywords": [
     "anime"
   ],
   "author": "Sergio Aldana",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sergioraldana/animeapp/issues"
-  },
-  "homepage": "https://github.com/sergioraldana/animeapp#readme",
   "devDependencies": {
     "electron": "^12.0.1"
   }
