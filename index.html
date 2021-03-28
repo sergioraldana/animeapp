@@ -26,6 +26,7 @@
         <p>Anime app utiliza el api de https://jikan.moe la cual permite realizar consultas relacionadas con Anime, Manga y más. La consulta actual permite enviar 2 parametros hacia el servicio, el primero es el ¨type¨que puede tener varios valores y que para esta app se escogieron 3: anime, manga y character, cada type se complementa con el segundo parametro que es una cadena de texto ¨q¨sobre la cual se realiza la búsqueda. La URL para fetch acepta los 2 parametros por lo que se envian al mismo tiempo. La respuesta para cada type es diferente por lo que los resultados se manejan con funciones diferentes y la iformación se formatea para cada tipo.</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
+
         <form class="row g-3" id="formulario_texto">
         
             <div class="col-auto">
@@ -41,6 +42,9 @@
             </div>
             <div class="col-auto">
               <button type="button" class="btn btn-primary mb-3" id="btn">Búsqueda</button>
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary mb-3" id="btn-consulta">Consultar base de datos</button>
             </div>
           </form>
 
@@ -71,6 +75,24 @@
           <a class="navbar-brand" href="#">Versión 0.0.1</a>
         </div>
       </nav>
+
+      <div class="modal" tabindex="-1" id="error">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Error</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Esta funcion no ha sido implementada.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
